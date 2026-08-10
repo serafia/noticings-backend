@@ -1,0 +1,21 @@
+{
+  "name": "noticings",
+  "version": "1.0.0",
+  "description": "Backend for Noticings, a web application that allows users to create and manage their own personal notices.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "setup:env": "node scripts/setup-env.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.3.0",
+    "mongodb": "^7.5.0"
+  }
+}
