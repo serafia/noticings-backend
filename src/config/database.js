@@ -20,7 +20,7 @@ export async function connectDatabase() {
   if (database) return database;
 
   await client.connect();
-  database = client.db();
+  database = client.db(process.env.MONGODB_DATABASE || "noticings");
 
   console.log("Connected to MongoDB");
   return database;
